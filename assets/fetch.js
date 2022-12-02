@@ -16,7 +16,7 @@ return res.json();
        
         
             toHourFilm="";
-            toHourFilm=Math.floor(movie.timeWatchedMinute/60)+"h"+(movie.timeWatchedMinute%60)+"min";
+            toHourFilm=Math.floor(movie.dureeTotale/60)+"h"+(movie.dureeTotale%60)+"min";
         
         
             addfilm +=
@@ -30,7 +30,7 @@ return res.json();
             <li class="list-group-item"> Réalisateur: ${movie.realisateur}</li>
             <li class="list-group-item">Duration: ${toHourFilm} 
              <i class="bi bi-play-circle ps-1"></i>    Temps regardé: ${movie.view} min </li>
-            <li class="list-group-item"> Visonné: ${Math.floor((movie.view/movie.timeWatchedMinute)*100)}%</li>
+            <li class="list-group-item"> Visonné: ${Math.floor((movie.view/movie.dureeTotale)*100)}%</li>
             <li class="list-group-item">Année: ${movie.years}</li>
             </ul>
             <div class="card-body">
@@ -41,16 +41,12 @@ return res.json();
                 <span id="listFilms"></span>
             </div>    
         </div>`
-            // function toHourFilm(minutes){
-            //     return (Math.floor(minutes/60)+"h"+(minutes%60)+"min");
-            // }
-            // toHourFilm(movie.timeWatchedMinute)
-            // console.log(toHourFilm(movie.timeWatchedMinute))
+
         
          
         
-        document.getElementById("parent").innerHTML=addfilm 
-   ;
+        document.getElementById("parent").innerHTML=addfilm;
+   
     })
 })
 
