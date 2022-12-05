@@ -1,0 +1,15 @@
+.film_detail {
+    padding-top: 150px;
+}
+.active {
+    color:rgb(245, 203, 17);
+}
+
+.like {
+    color:rgb(49, 49, 237);
+}
+
+
+footer {
+    margin-top: 150px;
+}

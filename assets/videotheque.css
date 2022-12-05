@@ -50,6 +50,10 @@ li {
   margin-bottom: 5px;
 }
 
+/* height description */
+.text-height {
+  height:130px;
+}
 
 footer .line {
   width: 60px;
